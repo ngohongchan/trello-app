@@ -1,24 +1,153 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='trello-master'>
+      <nav className='navbar app'>App Bar</nav>
+      <nav className='navbar board'>Board Bar</nav>
+      <div className='board-columns'>
+        <div className='columns'>
+          <header>Brainstore</header>
+          <ul>
+            <li>
+              <img
+                src='https://trungquandev.com/wp-content/uploads/2021/05/trungquandev-cover-animation-1024x758.jpg'
+                alt='trello-background'
+              />
+              Titile: CHANNGO
+            </li>
+            <li>
+              <img
+                src='https://trungquandev.com/wp-content/uploads/2021/05/trungquandev-cover-animation-1024x758.jpg'
+                alt='trello-background'
+              />
+              Titile: CHANNGO
+            </li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+          </ul>
+          <footer>Add another card</footer>
+        </div>
+
+        <div className='columns'>
+          <header>Brainstore</header>
+          <ul>
+            <li>
+              {/* <img
+                src='https://trungquandev.com/wp-content/uploads/2021/05/trungquandev-cover-animation-1024x758.jpg'
+                alt='trello-background'
+              /> */}
+              Titile: CHANNGO
+            </li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+          </ul>
+          <footer>Add another card</footer>
+        </div>
+
+        <div className='columns'>
+          <header>Brainstore</header>
+          <ul>
+            <li>
+              <img
+                src='https://trungquandev.com/wp-content/uploads/2021/05/trungquandev-cover-animation-1024x758.jpg'
+                alt='trello-background'
+              />
+              Titile: CHANNGO
+            </li>
+            <li>
+              <img
+                src='https://trungquandev.com/wp-content/uploads/2021/05/trungquandev-cover-animation-1024x758.jpg'
+                alt='trello-background'
+              />
+              Titile: CHANNGO
+            </li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+          </ul>
+          <footer>Add another card</footer>
+        </div>
+
+        <div className='columns'>
+          <header>Brainstore</header>
+          <ul>
+            <li>
+              <img
+                src='https://trungquandev.com/wp-content/uploads/2021/05/trungquandev-cover-animation-1024x758.jpg'
+                alt='trello-background'
+              />
+              Titile: CHANNGO
+            </li>
+            <li>
+              <img
+                src='https://trungquandev.com/wp-content/uploads/2021/05/trungquandev-cover-animation-1024x758.jpg'
+                alt='trello-background'
+              />
+              Titile: CHANNGO
+            </li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+          </ul>
+          <footer>Add another card</footer>
+        </div>
+
+        <div className='columns'>
+          <header>Brainstore</header>
+          <ul>
+            <li>
+              <img
+                src='https://trungquandev.com/wp-content/uploads/2021/05/trungquandev-cover-animation-1024x758.jpg'
+                alt='trello-background'
+              />
+              Titile: CHANNGO
+            </li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+          </ul>
+          <footer>Add another card</footer>
+        </div>
+
+        <div className='columns'>
+          <header>Brainstore</header>
+          <ul>
+            <li>
+              <img
+                src='https://trungquandev.com/wp-content/uploads/2021/05/trungquandev-cover-animation-1024x758.jpg'
+                alt='trello-background'
+              />
+              Titile: CHANNGO
+            </li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+            <li>Add what you'd like work on below</li>
+          </ul>
+          <footer>Add another card</footer>
+        </div>
+      </div>
     </div>
   );
 }
