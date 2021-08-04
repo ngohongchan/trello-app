@@ -1,0 +1,31 @@
+@import '../../setting';
+
+$board-bg-color: #0079bf;
+$app-bar-color: #0067a3;
+$list-bg-color: #ebecf0;
+
+$gap: 10px;
+$columns-header-height: 46px;
+$columns-footer-height: 46px;
+$columns-border-radius: 5px;
+$card-border-radius: 5px;
+$common-element-bg: rgba(255, 255, 255, 0.24);
+
+.board-columns {
+  display: flex;
+  margin: 0 $gap $gap;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+   height: 11px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $common-element-bg;
+    border-radius: 8px;
+   }
+
+}
