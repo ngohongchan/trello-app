@@ -18,6 +18,13 @@ export const initialData = {
               cover: 'https://trungquandev.com/wp-content/uploads/2021/05/trungquandev-cover-animation-1024x758.jpg'
             },
             {
+              id: 'card-1',
+              boardId: 'board-1',
+              columnId: 'column-1',
+              title: 'Title of card 1',
+              cover: 'https://trungquandev.com/wp-content/uploads/2021/05/trungquandev-cover-animation-1024x758.jpg'
+            },
+            {
               id: 'card-2',
               boardId: 'board-1',
               columnId: 'column-1',

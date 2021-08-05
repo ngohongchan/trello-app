@@ -12,10 +12,12 @@ type Props = {
 
 const Task: React.FC<Props> = ({ card }) => {
   return (
-    <li>
-      {card.cover && <img src={card.cover} className='card-cover' alt={card.title} />}
+    <div className='task-item'>
+      {card.cover && (
+        <img src={card.cover} className='card-cover' alt={card.title} onMouseDown={(e) => e.preventDefault()} />
+      )}
       {card.title}
-    </li>
+    </div>
   );
 };
 
