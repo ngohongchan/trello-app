@@ -1,15 +1,20 @@
 import React from 'react';
 
-type Props = {};
+type Props = {
+  card: {
+    id: string;
+    boardId: string;
+    columnId: string;
+    title: string;
+    cover: string;
+  };
+};
 
-const Task: React.FC<Props> = () => {
+const Task: React.FC<Props> = ({ card }) => {
   return (
     <li>
-      <img
-        src='https://trungquandev.com/wp-content/uploads/2021/05/trungquandev-cover-animation-1024x758.jpg'
-        alt='trello-background'
-      />
-      Titile: CHANNGO
+      {card.cover && <img src={card.cover} className='card-cover' alt={card.title} />}
+      {card.title}
     </li>
   );
 };

@@ -1,21 +1,34 @@
 import React from 'react';
+import { mapOrder } from '../../utilities/sort';
 import Task from '../Task';
 import './styles.scss';
 
-type Props = {};
+type Props = {
+  column: {
+    title: string;
+    cards: [];
+    cardOrder: [];
+  };
+};
 
-const Columns: React.FC<Props> = () => {
+type Card = {
+  id: string;
+  boardId: string;
+  columnId: string;
+  title: string;
+  cover: string;
+};
+
+const Columns: React.FC<Props> = ({ column }) => {
+  const cards = mapOrder(column.cards, column.cardOrder, 'id');
+
   return (
     <div className='columns'>
-      <header>Brainstore</header>
+      <header>{column.title}</header>
       <ul className='task-list'>
-        <Task />
-        <li>Add what you'd like work on below</li>
-        <li>Add what you'd like work on below</li>
-        <li>Add what you'd like work on below</li>
-        <li>Add what you'd like work on below</li>
-        <li>Add what you'd like work on below</li>
-        <li>Add what you'd like work on below</li>
+        {cards.map((card: Card, index: number) => (
+          <Task key={index} card={card} />
+        ))}
       </ul>
       <footer>Add another card</footer>
     </div>

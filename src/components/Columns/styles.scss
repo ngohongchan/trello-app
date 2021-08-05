@@ -55,7 +55,7 @@ $common-element-bg: rgba(255, 255, 255, 0.24);
     }
 
     &::-webkit-scrollbar:vertical {
-     width: 11px;
+      width: 11px;
     }
 
     &::-webkit-scrollbar-thumb {
@@ -72,11 +72,11 @@ $common-element-bg: rgba(255, 255, 255, 0.24);
         margin-bottom: $gap;
       }
 
-      img {
+      img.card-cover {
         display: block;
         width: calc(100% + 2 * #{$gap});
         margin: -$gap 0 $gap (-$gap);
-        border-top-left-radius:$card-border-radius;
+        border-top-left-radius: $card-border-radius;
         border-top-right-radius: $card-border-radius;
       }
     }
